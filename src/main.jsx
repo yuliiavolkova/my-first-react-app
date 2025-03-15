@@ -1,16 +1,21 @@
 import { StrictMode } from "react";
 
 import "./index.css";
-import App from "./App.jsx";
-
 import { createRoot } from "react-dom/client";
 import { Fragment } from "react";
 const root = createRoot(document.getElementById("root"));
 
 function Header() {
   return (
-    <header>
-      <img src="react-logo.png" width="40px" alt="React logo" />
+    <header className="header">
+      <img src="react-logo.png" className="nav-logo" alt="React logo" />
+      <nav>
+        <ul className="nav-list">
+          <li className="nav-list-item">Pricing</li>
+          <li className="nav-list-item">About</li>
+          <li className="nav-list-item">Contact</li>
+        </ul>
+      </nav>
     </header>
   );
 }
@@ -20,10 +25,10 @@ function MainComponent() {
     <main>
       <h1>Reason, why i do it?</h1>
       <ol>
-        <ol>I want earn enough money</ol>
-        <ol>I like logical tasks</ol>
-        <ol>I like be like Sherlock but in IT world</ol>
-        <ol>I think im ready</ol>
+        <li>I want earn enough money</li>
+        <li>I like logical tasks</li>
+        <li>I like be like Sherlock but in IT world</li>
+        <li>I think im ready</li>
       </ol>
     </main>
   );
