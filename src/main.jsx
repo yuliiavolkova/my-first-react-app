@@ -6,16 +6,17 @@ import { Fragment } from "react";
 import Header from "./Header2";
 import MainComponent from "./MainContent";
 import Footer from "./Footer";
+import App from "./components/App";
 const root = createRoot(document.getElementById("root"));
 
-function Page() {
-  return (
-    <>
-      <Header />
-      <MainComponent />
-      <Footer />
-    </>
-  );
-}
+// function Page() {
+//   return (
+//     <>
+//       <Header />
+//       <MainComponent />
+//       <Footer />
+//     </>
+//   );
+// }
 
-root.render(<Page />);
+root.render(<App />);
