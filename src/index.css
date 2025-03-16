@@ -23,11 +23,12 @@ a:hover {
 }
 
 body {
-  margin: 30px;
+  margin: 0;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
+  font-family: inter, sans-serif;
 }
 
 h1 {
@@ -71,6 +72,9 @@ button:focus-visible {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 90px;
+  background-color: #21222a;
+  padding: 30px 25px;
 }
 
 .nav-list {
@@ -85,4 +89,21 @@ button:focus-visible {
 
 .nav-logo {
   width: 55px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+
+nav > img {
+  width: 55px;
+  margin-right: 7px;
+}
+
+nav > span {
+  font-size: 1.4rem;
+  color: #61dafb;
+  font-weight: 700;
 }
