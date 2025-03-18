@@ -23,12 +23,14 @@ a:hover {
 }
 
 body {
-  margin: 0;
+  margin: 10;
   display: flex;
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
   font-family: inter, sans-serif;
+  background-color: #282d35;
+  color: white;
 }
 
 h1 {
@@ -106,4 +108,31 @@ nav > span {
   font-size: 1.4rem;
   color: #61dafb;
   font-weight: 700;
+}
+
+main {
+  padding: 60px 30px;
+  background-image: url(/src/react-logo-half.png);
+  background-repeat: no-repeat;
+  background-position: right 70%;
+}
+
+main > h1 {
+  margin: 0;
+  font-size: 2.4rem;
+}
+
+.facts-list {
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.facts-list > li {
+  margin-block: 15px;
+  line-height: 19px;
+}
+
+.facts-list > li::marker {
+  color: #61dafb;
+  font-size: 1.5rem;
 }

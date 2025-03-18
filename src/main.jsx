@@ -8,6 +8,7 @@ import MainComponent from "./MainContent";
 import Footer from "./Footer";
 import App from "./components/App";
 const root = createRoot(document.getElementById("root"));
+root.render(<App />);
 
 // function Page() {
 //   return (
@@ -18,5 +19,3 @@ const root = createRoot(document.getElementById("root"));
 //     </>
 //   );
 // }
-
-root.render(<App />);
